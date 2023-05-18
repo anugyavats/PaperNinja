@@ -6,7 +6,7 @@
 }
 
 .background-image {
-  background-image: url("images/background_home5.png");
+  background-image: url("images/background_home3.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -63,4 +63,14 @@ h1 {
 
 .get-started-button:hover {
   background-color: #555555;
+}
+
+/* Add the following CSS styles for the sentence */
+#sentence {
+  font-size: 24px;
+  color: #333333;
+  animation: typing-effect 5s linear infinite; /* Set the animation to repeat infinitely */
+  white-space: nowrap;
+  overflow: hidden;
+  animation-fill-mode: forwards;
 }
