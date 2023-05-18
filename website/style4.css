@@ -73,6 +73,12 @@ body {
     text-align: center;
     width: calc(25% - 20px); /* Set width to 25% minus the desired spacing between folders */
     margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  .folder:hover {
+    
+    transform: scale(1.1);
+      
   }
   @media (max-width: 768px) {
     /* Media query for smaller screens */
@@ -80,11 +86,22 @@ body {
       width: calc(33.33% - 20px); /* Set width to 33.33% minus the desired spacing between folders on smaller screens */
     }
   }
-  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
   .folder img {
     width: 120px;
     height: 120px;
     border-radius: 100%;
+    
   }
   
   .folder p {
