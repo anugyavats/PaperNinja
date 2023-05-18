@@ -21,4 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   type();
+
+  var getStartedButton = document.getElementById("get-started-button");
+  getStartedButton.addEventListener("click", function () {
+    window.location.href = "website3.html"; // Open the second page when the button is clicked
+  });
 });
